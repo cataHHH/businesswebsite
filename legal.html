@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal | HERASCU IULIAN-CATALIN PFA</title>
+    <meta name="description" content="Privacy Notice and Terms of Service for HERASCU IULIAN-CATALIN PFA.">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0f172a;
+            --accent: #3b82f6;
+            --accent-hover: #2563eb;
+            --text: #334155;
+            --text-light: #64748b;
+            --bg: #ffffff;
+            --bg-alt: #f8fafc;
+            --border: #e2e8f0;
+            --radius: 8px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .nav-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 18px;
+            color: var(--primary);
+            text-decoration: none;
+            letter-spacing: -0.3px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-light);
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .menu-toggle span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--primary);
+            margin: 5px 0;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+
+        .content {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 120px 24px 80px;
+        }
+
+        .content h1 {
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .content .last-updated {
+            font-size: 14px;
+            color: var(--text-light);
+            margin-bottom: 48px;
+        }
+
+        .content h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 48px;
+            margin-bottom: 16px;
+            padding-top: 48px;
+            border-top: 1px solid var(--border);
+        }
+
+        .content h2:first-of-type {
+            border-top: none;
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        .content h3 {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 28px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 15px;
+            color: var(--text);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .content ul {
+            margin-bottom: 16px;
+            padding-left: 24px;
+        }
+
+        .content li {
+            font-size: 15px;
+            color: var(--text);
+            line-height: 1.8;
+            margin-bottom: 6px;
+        }
+
+        .content a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
+
+        .toc {
+            background: var(--bg-alt);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-bottom: 48px;
+        }
+
+        .toc p {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .toc li {
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+
+        .toc a {
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        footer {
+            background: var(--primary);
+            color: #94a3b8;
+            padding: 48px 24px;
+        }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-logo {
+            font-weight: 700;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .footer-logo span {
+            color: var(--accent);
+        }
+
+        .footer-text {
+            font-size: 13px;
+        }
+
+        .footer-text a {
+            color: #94a3b8;
+            text-decoration: none;
+        }
+
+        .footer-text a:hover {
+            color: #fff;
+        }
+
+        @media (max-width: 900px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 64px;
+                left: 0;
+                right: 0;
+                background: rgba(255,255,255,0.98);
+                backdrop-filter: blur(12px);
+                flex-direction: column;
+                padding: 24px;
+                gap: 20px;
+                border-bottom: 1px solid var(--border);
+                box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                padding: 100px 16px 60px;
+            }
+
+            .content h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="logo">HERASCU IULIAN-CATALIN PFA<span>.</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>Legal</h1>
+        <p class="last-updated">Last updated: February 2026</p>
+
+        <div class="toc">
+            <p>On this page</p>
+            <ul>
+                <li><a href="#provider">Provider Information</a></li>
+                <li><a href="#privacy">Privacy Notice</a></li>
+                <li><a href="#delivery">Delivery Information</a></li>
+                <li><a href="#terms">Terms of Service</a></li>
+            </ul>
+        </div>
+
+        <!-- PROVIDER INFORMATION -->
+        <h2 id="provider">Provider Information</h2>
+        <p>In accordance with Romanian law and EU Directive 2000/31/EC on electronic commerce:</p>
+        <ul>
+            <li><strong>Business name:</strong> HERASCU IULIAN-CATALIN PFA</li>
+            <li><strong>Legal form:</strong> Persoana Fizica Autorizata (PFA)</li>
+            <li><strong>CUI:</strong> 32266451</li>
+            <li><strong>VAT:</strong> RO32266451</li>
+            <li><strong>Registration number:</strong> F2024000107387</li>
+            <li><strong>Registered address:</strong> Jud. V&acirc;lcea, Municipiul R&acirc;mnicu V&acirc;lcea, Splaiul INDEPENDEN&#x021A;EI, Nr. 6, camera 1, Bl. 7, Scara A, Ap. 6, Romania</li>
+            <li><strong>Email:</strong> <a href="mailto:HICConsultancy@proton.me">HICConsultancy@proton.me</a></li>
+        </ul>
+
+        <!-- PRIVACY NOTICE -->
+        <h2 id="privacy">Privacy Notice</h2>
+        <p>This notice explains how HERASCU IULIAN-CATALIN PFA ("I", "me") handles personal data collected through this website, in compliance with the General Data Protection Regulation (EU) 2016/679 ("GDPR").</p>
+
+        <h3>Data Controller</h3>
+        <p>The data controller is HERASCU IULIAN-CATALIN PFA, contactable at <a href="mailto:HICConsultancy@proton.me">HICConsultancy@proton.me</a>.</p>
+
+        <h3>What Data I Collect</h3>
+        <p>When you use the contact form on this website, you provide:</p>
+        <ul>
+            <li>Your name</li>
+            <li>Your email address</li>
+            <li>Your message</li>
+        </ul>
+        <p>This data is not stored on any server. The contact form opens your email client via a mailto link, so the data only exists in the email you choose to send.</p>
+        <p>This website does not use cookies, analytics, tracking scripts, or any third-party services that collect personal data.</p>
+
+        <h3>Purpose and Legal Basis</h3>
+        <p>If you send an email via the contact form, I process your personal data to respond to your inquiry. The legal basis is Article 6(1)(b) GDPR (pre-contractual measures taken at your request) and Article 6(1)(f) GDPR (my legitimate interest in responding to business inquiries).</p>
+
+        <h3>Data Retention</h3>
+        <p>Emails received through the contact form are retained only as long as necessary to handle your inquiry and any resulting business relationship, or as required by Romanian tax and commercial law.</p>
+
+        <h3>Your Rights</h3>
+        <p>Under the GDPR you have the right to:</p>
+        <ul>
+            <li>Access the personal data I hold about you</li>
+            <li>Request correction of inaccurate data</li>
+            <li>Request deletion of your data</li>
+            <li>Object to or restrict processing</li>
+            <li>Data portability</li>
+            <li>Lodge a complaint with the Romanian supervisory authority (ANSPDCP, <a href="https://www.dataprotection.ro" target="_blank" rel="noopener noreferrer">www.dataprotection.ro</a>)</li>
+        </ul>
+        <p>To exercise any of these rights, contact me at <a href="mailto:HICConsultancy@proton.me">HICConsultancy@proton.me</a>.</p>
+
+        <h3>Data Sharing</h3>
+        <p>I do not sell, rent, or share your personal data with third parties, except where required by law.</p>
+
+        <!-- DELIVERY INFORMATION -->
+        <h2 id="delivery">Delivery Information</h2>
+        <p>All services provided by HERASCU IULIAN-CATALIN PFA are delivered remotely. There are no physical goods or shipments involved.</p>
+        <p>Project scope, timelines, and deliverables are agreed upon individually with each client before work begins. If you have questions about how services are delivered, please <a href="index.html#contact">get in touch</a>.</p>
+
+        <!-- TERMS OF SERVICE -->
+        <h2 id="terms">Terms of Service</h2>
+        <p>By using this website you agree to the following terms.</p>
+
+        <h3>Services</h3>
+        <p>This website presents the IT consultancy services offered by HERASCU IULIAN-CATALIN PFA. The content is for informational purposes. Actual service engagements are governed by individual contracts agreed upon between parties.</p>
+
+        <h3>Intellectual Property</h3>
+        <p>All content on this website — text, design, graphics, and code — is the property of HERASCU IULIAN-CATALIN PFA unless otherwise stated. You may not reproduce, distribute, or use this content without written permission.</p>
+
+        <h3>Limitation of Liability</h3>
+        <p>This website is provided "as is." I make no warranties regarding the accuracy or completeness of the content. I am not liable for any damages arising from the use of this website.</p>
+
+        <h3>External Links</h3>
+        <p>This website may contain links to third-party websites (e.g., app stores). I am not responsible for the content or privacy practices of those sites.</p>
+
+        <h3>Governing Law</h3>
+        <p>These terms are governed by Romanian law. Any disputes shall be resolved by the competent courts in Romania.</p>
+
+        <h3>Changes</h3>
+        <p>I may update this page at any time. The "Last updated" date at the top reflects the most recent revision.</p>
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-logo">HIC<span>.</span></div>
+            <div class="footer-text">2025 HIC. PFA. &middot; <a href="legal.html">Legal</a></div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => navLinks.classList.remove('open'));
+        });
+    </script>
+
+</body>
+
+</html>
